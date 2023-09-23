@@ -2,9 +2,18 @@ body{
     background-color: rgb(25,25,25);
     color: white;
     font-size: Arial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 
 }
+.main-class{
+    text-align: center;
+}
+
 .title{
+    align-items: center;
     font-size: 30px;
     font-weight: bold;
 

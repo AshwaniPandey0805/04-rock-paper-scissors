@@ -7,42 +7,44 @@
     <link rel="stylesheet" href="styles/11-rock-paper-scissors.css">
 </head>
 <body>
-    <p class="title">Rock paper Scissors</p>
-    <button onclick="
-        playerGame('rock');
-    " class="move-button">
-    <img src="images/rock-emoji.png" class="move-icon">
-</button>
-
-    <button onclick="
-        playerGame('paper');
-    " class="move-button">
-    <img src="images/paper-emoji.png" class="move-icon"></button>
-
-
-    <button onclick=" 
-        playerGame('scissors');
-    " class="move-button">
-    <img src="images/scissors-emoji.png" class="move-icon">
+    <div class="main-class">
+        <p class="title">Rock paper Scissors</p>
+        <button onclick="
+            playerGame('rock');
+        " class="move-button">
+        <img src="images/rock-emoji.png" class="move-icon">
     </button>
 
-    <p class="js-result result"></p>
-    <p class="js-moves"></p>
-    <p class="js-score-element score"></p>
+        <button onclick="
+            playerGame('paper');
+        " class="move-button">
+        <img src="images/paper-emoji.png" class="move-icon"></button>
 
-    <button onclick="
-        score.wins = 0;
-        score.losses = 0;
-        score.ties = 0;
-        localStorage.removeItem('score');
-        updateScoreElement();
-    " class="reset-score-button">Reset</button>
 
-    <button class="auto-play-button" onclick="
-        autoPlay();
-    ">Auto Play</button>
+        <button onclick=" 
+            playerGame('scissors');
+        " class="move-button">
+        <img src="images/scissors-emoji.png" class="move-icon">
+        </button>
 
-    <script src="scripts/11-rock-paper-scissors.js" ></script>
+        <p class="js-result result"></p>
+        <p class="js-moves"></p>
+        <p class="js-score-element score"></p>
+
+        <button onclick="
+            score.wins = 0;
+            score.losses = 0;
+            score.ties = 0;
+            localStorage.removeItem('score');
+            updateScoreElement();
+        " class="reset-score-button">Reset</button>
+
+        <button class="auto-play-button" onclick="
+            autoPlay();
+        ">Auto Play</button>
+
+        <script src="scripts/11-rock-paper-scissors.js" ></script>
+    </div>
     
 </body>
 </html>
